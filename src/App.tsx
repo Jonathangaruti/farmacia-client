@@ -7,12 +7,10 @@ import Login from "./paginas/login/Login";
 import Cadastro from "./paginas/cadastro/Cadastro";
 import ListaCategoria from "./components/categorias/listaCategoria/ListaCategoria";
 import FormularioCategoria from "./components/categorias/formularioCategoria/FormularioCategoria";
-import { AuthProvider } from "./contexts/AuthContext";
 
 function App() {
   return (
     <>
-    <AuthProvider>
         <BrowserRouter>
           <Navbar />
           <div className="min-h-[77.5vh]">
@@ -34,7 +32,6 @@ function App() {
           </div>
           <Footer />
         </BrowserRouter>
-        </AuthProvider>
     </>
   );
 }
